@@ -23,10 +23,10 @@ export default function SkillsSection() {
   }, []);
 
   return (
-    <section className="py-20 overflow-hidden">
-      <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-200">
-          My Skills & Technologies
+    <section className="overflow-hidden">
+      <div className="container mx-auto pt-10 px-6 lg:px-24">
+        <h2 className="text-4xl md:text-5xl font-extrabold text-center">
+          My Best <span className="text-violet-500">Skills</span> & <span className="text-violet-500">Technologies</span>
         </h2>
         <div className="flex flex-col items-center justify-center gap-12 lg:gap-8">
           {/* Left Side: Orbiting Skills */}
