@@ -113,7 +113,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-20 px-4 lg:px-20 my-12 lg:my-20">
+    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-20 px-4 lg:px-20 mt-6">
       {/* Left side content */}
       <motion.div
         initial={{ x: -50, opacity: 0 }}

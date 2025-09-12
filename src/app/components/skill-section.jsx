@@ -25,7 +25,7 @@ export default function SkillsSection() {
   return (
     <section className="py-20 overflow-hidden">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-200">
+        <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-200">
           My Skills & Technologies
         </h2>
         <div className="flex flex-col items-center justify-center gap-12 lg:gap-8">
