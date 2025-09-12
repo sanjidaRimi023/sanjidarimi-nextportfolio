@@ -19,7 +19,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className="min-h-screen w-full relative">
+      <body className="w-full relative">
         <div
           className="absolute inset-0 z-0 pointer-events-none"
           style={{
