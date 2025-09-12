@@ -1,4 +1,3 @@
-# Sanjida Akter Rimi 
+# Personal Portfolio & Blog Website
 
-### I'm Sanjida Akter Rimi, a passionate frontend-focused MERN Stack Developer dedicated to building fast, clean, and scalable web applications using React.js, Next.js, Node.js, Express.js, MongoDB, and Firebase.Skilled in responsive UI frameworks like Tailwind CSS, Shadcn UI, and Bootstrap, I create visually appealing and performance-driven user experiences.On the backend, I build secure APIs with Express.js and JWT, integrating tools like Firebase for authentication and TanStack Query for efficient data handling.
-
+#### This is a personal portfolio and blog website built with Next.js. It showcases a portfolio introduction, featured projects, a blog, and a contact form.
