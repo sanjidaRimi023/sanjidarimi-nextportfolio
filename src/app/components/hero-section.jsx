@@ -2,14 +2,13 @@
 
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Download, Github, Linkedin, Twitter } from "lucide-react";
-import Image from "next/image";
+import { Download, Github, Linkedin, Facebook } from "lucide-react";
 
 // A simple, self-contained component for social media icons
 const SocialIcon = () => {
   const socialLinks = [
     {
-      href: "https://github.com",
+      href: "https://github.com/sanjidaRimi023",
       icon: <Github size={24} />,
       label: "GitHub",
     },
@@ -20,8 +19,8 @@ const SocialIcon = () => {
     },
     {
       href: "https://twitter.com",
-      icon: <Twitter size={24} />,
-      label: "Twitter",
+      icon: <Facebook size={24} />,
+      label: "Facebook",
     },
   ];
 
@@ -162,21 +161,32 @@ export default function HeroSection() {
         </a>
       </motion.div>
 
-      <motion.div
-        initial={{ x: 50, opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 0.8 }}
-        viewport={{ once: false }}
-        className="flex-1 flex justify-center md:justify-end"
-      >
-        <Image
-          src="/profilepic.png"
-          alt="Sanjida Akter Rimi"
-          width={400}
-          height={400}
-          className="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 object-cover rounded-full shadow-lg border-4 border-violet-600"
-        />
-      </motion.div>
+                <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
+            className="lg:col-span-2 flex justify-center items-center"
+          >
+            <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
+                <motion.div 
+                  className="absolute inset-0 rounded-full border-2 border-violet-500/50"
+                  animate={{ scale: [1, 1.05, 1], opacity: [0.5, 0.8, 0.5] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}
+                />
+                <motion.div 
+                  className="absolute inset-2 rounded-full border-2 border-indigo-500/40"
+                  animate={{ scale: [1, 1.05, 1], opacity: [0.4, 0.7, 0.4] }}
+                  transition={{ duration: 2, repeat: Infinity, ease: "easeInOut", delay: 0.5 }}
+                 />
+                <motion.img
+                    src="/profilepic.png"
+                    alt="Sanjida Akter Rimi"
+                    className="w-full h-full object-cover rounded-full p-2"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring", stiffness: 300 }}
+                />
+            </div>
+          </motion.div>
     </section>
   );
 }
