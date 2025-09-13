@@ -105,7 +105,7 @@ const AnimatedBackground = () => {
 
 const NotFoundPage = () => {
   return (
-    <section className="relative flex items-center justify-center min-h-screen bg-slate-900 text-white p-6 overflow-hidden">
+    <section className="relative flex items-center justify-center min-h-screen text-white p-6 overflow-hidden">
       <AnimatedBackground />
       <div className="container relative z-10 mx-auto max-w-2xl text-center">
         <motion.div

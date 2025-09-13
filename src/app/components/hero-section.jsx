@@ -152,7 +152,7 @@ export default function HeroSection() {
           <SocialIcon />
         </div>
         <a
-          href="https://drive.google.com/file/d/1M1RfucTlKgUAMXu7klbjF237QGNIJ3C2/view?usp=sharing"
+          href="/resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 px-5 py-2 mt-8 bg-violet-700 border border-violet-900 rounded-full text-sm sm:text-base text-white backdrop-blur-sm hover:bg-violet-800 transition-all duration-300"

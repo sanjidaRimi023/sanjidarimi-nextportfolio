@@ -1,9 +1,9 @@
+import Contact from "./components/contact-section";
 import Education from "./components/education-section";
 import HeroSection from "./components/hero-section";
 import Projects from "./components/projects";
 import Services from "./components/services-section";
 import SkillsSection from "./components/skill-section";
-
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       </div>
 
       <div id="projectsSection">
-     <Projects/>
+        <Projects />
       </div>
 
       <div id="education">
@@ -26,6 +26,9 @@ export default function Home() {
 
       <div id="servicesSection">
         <Services />
+      </div>
+      <div id="contactSection">
+        <Contact/>
       </div>
     </>
   );
