@@ -19,22 +19,25 @@ export default function Projects() {
     <section className="container mx-auto py-24 px-6 lg:px-24" aria-labelledby="projects-heading">
       {/* Section Heading */}
       <header className="text-center mb-16">
-        <motion.h2
-          id="projects-heading"
-          initial={{ y: -50, opacity: 0 }}
-          whileInView={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.8, type: "spring" }}
-          viewport={{ once: true }}
-          className="text-4xl md:text-5xl font-extrabold text-white leading-tight"
-        >
-          My Digital <span className="text-violet-500">Creations</span>
-        </motion.h2>
+       <div className="flex items-center justify-center gap-4">
+  {/* Left Vertical Line */}
+  <div className="w-[2px] h-12 bg-violet-500"></div>
+
+  {/* Heading */}
+  <h2 className="text-4xl font-extrabold text-center">
+    My Digital<span className="text-violet-500">Creations</span>
+  </h2>
+
+  {/* Right Vertical Line */}
+  <div className="w-[2px] h-12 bg-violet-500"></div>
+</div>
+
         <motion.p
           initial={{ y: 50, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-4 text-lg text-slate-400 max-w-2xl mx-auto"
+          className="mt-4 text-sm text-slate-200 max-w-2xl mx-auto"
         >
           A selection of projects where I've turned complex problems into elegant, user-friendly solutions.
         </motion.p>

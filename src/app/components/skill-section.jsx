@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useEffect } from "react";
 
 import OrbitingSkills from "./orbiting-skill";
@@ -25,17 +25,23 @@ export default function SkillsSection() {
   return (
     <section className="overflow-hidden">
       <div className="container mx-auto pt-10 px-6 lg:px-24">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center">
-          My Best <span className="text-violet-500">Skills</span> & <span className="text-violet-500">Technologies</span>
-        </h2>
+        <div className="flex items-center justify-center gap-4">
+          <div className="w-[2px] h-12 bg-violet-500"></div>
+
+          <h2 className="text-4xl font-extrabold text-center">
+            My Best <span className="text-violet-500">Skills</span> &{" "}
+            <span className="text-violet-500">Technologies</span>
+          </h2>
+
+          <div className="w-[2px] h-12 bg-violet-500"></div>
+        </div>
+
         <div className="flex flex-col items-center justify-center gap-12 lg:gap-8">
           {/* Left Side: Orbiting Skills */}
-       
-            <OrbitingSkills />
-    
-      
-            <MarqueeSkills />
-  
+
+          <OrbitingSkills />
+
+          <MarqueeSkills />
         </div>
       </div>
     </section>

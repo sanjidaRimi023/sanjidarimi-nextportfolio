@@ -22,7 +22,7 @@ export default function Navbar() {
 
   const menuItems = [
     { name: "Home", path: "/", icon: <Home size={18} /> },
-    { name: "About", path: "/more-about-me", icon: <Info size={18} /> },
+   
     { name: "Skills", path: "/skill", icon: <Code size={18} /> },
     { name: "Projects", path: "/projects", icon: <FolderGit2 size={18} /> },
     { name: "Services", path: "/services", icon: <Briefcase size={18} /> },

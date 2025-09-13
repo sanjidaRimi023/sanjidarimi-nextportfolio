@@ -22,18 +22,18 @@ const Footer = () => {
     { 
       label: 'GitHub', 
       icon: Github, 
-      href: 'https://github.com/sanjida-akter-rimi' // Replace with your GitHub URL
+      href: 'https://github.com/sanjidaRimi023' 
     },
     { 
       label: 'LinkedIn', 
       icon: Linkedin, 
-      href: 'https://www.linkedin.com/in/sanjida-akter-rimi-075b952a7' // Replace with your LinkedIn URL
+      href: 'https://www.linkedin.com/in/sanjida-akter-rimi-711909/' 
     },
    
     { 
       label: 'Mail', 
       icon: Mail, 
-      href: 'mailto:sanjidaakterrimi.2002@gmail.com' // Replace with your email
+      href: 'mailto:sanjidarimi023@gmail.com' 
     },
   ];
   return (
