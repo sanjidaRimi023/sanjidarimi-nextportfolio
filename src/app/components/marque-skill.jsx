@@ -12,12 +12,19 @@ const marqueeSkills1 = [
 ];
 
 const marqueeSkills2 = [
+  { name: "Git", icon: "logos:git-icon", color: "#F05032" },
   { name: "Express.js", icon: "skill-icons:expressjs-dark", color: "#FFFFFF" },
   { name: "Git", icon: "logos:git-icon", color: "#F05032" },
-  { name: "Redux", icon: "logos:redux", color: "#764ABC" },
+  // { name: "Redux", icon: "logos:redux", color: "#764ABC" },
   { name: "Figma", icon: "logos:figma", color: "#F24E1E" },
-  { name: "Vite", icon: "logos:vitejs", color: "#646CFF" },
-  { name: "Redux", icon: "logos:redux", color: "#764ABC" },
+  { name: "Tailwind CSS", icon: "logos:tailwindcss-icon", color: "#06B6D4" },
+  { name: "Next.js", icon: "logos:nextjs-icon", color: "#FFFFFF" },
+
+  // { name: "Vite", icon: "logos:vitejs", color: "#646CFF" },
+  // { name: "Redux", icon: "logos:redux", color: "#764ABC" },
+  { name: "Git", icon: "logos:git-icon", color: "#F05032" },
+  { name: "MongoDB", icon: "logos:mongodb-icon", color: "#47A248" },
+
   { name: "Figma", icon: "logos:figma", color: "#F24E1E" },
 ];
 

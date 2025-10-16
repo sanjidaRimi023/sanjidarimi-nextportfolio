@@ -60,17 +60,17 @@ const services = [
     points: ["RESTful API Development", "MongoDB Schema Design", "JWT Authentication"],
     themeColor: "purple",
   },
-  {
-    icon: <Cloud className="w-8 h-8 lg:w-12 lg:h-12" />,
-    title: "Cloud Deployment",
-    description:
-      "Seamless deployment and management of full-stack apps on modern cloud platforms.",
-    points: ["Vercel & Netlify", "CI/CD Workflows", "Production Optimization"],
-    themeColor: "red",
-  },
+  // {
+  //   icon: <Cloud className="w-8 h-8 lg:w-12 lg:h-12" />,
+  //   title: "Cloud Deployment",
+  //   description:
+  //     "Seamless deployment and management of full-stack apps on modern cloud platforms.",
+  //   points: ["Vercel & Netlify", "CI/CD Workflows", "Production Optimization"],
+  //   themeColor: "red",
+  // },
 ];
 
-// --- সমাধান: প্রতিটি রঙের জন্য স্টাইল ম্যাপ তৈরি করা হয়েছে ---
+
 const themeStyles = {
   violet: {
     border: "border-violet-500/30",
@@ -155,7 +155,7 @@ export default function Services() {
           viewport={{ once: true, amount: 0.5 }}
           className="text-center"
         >
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 text-white">
             <div className="w-[2px] h-12 bg-violet-500"></div>
             <h2
               id="services-title"
@@ -165,7 +165,7 @@ export default function Services() {
             </h2>
             <div className="w-[2px] h-12 bg-violet-500"></div>
           </div>
-          <p className="text-sm my-6 max-w-3xl mx-auto leading-relaxed">
+          <p className="text-sm my-6 max-w-3xl mx-auto leading-relaxed text-white">
             I provide a wide range of services to turn your ideas into reality.
             Here's how I can help you succeed.
           </p>

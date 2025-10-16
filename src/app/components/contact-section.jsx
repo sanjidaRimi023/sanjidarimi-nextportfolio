@@ -102,7 +102,7 @@ export default function Contact() {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 tracking-tight text-white">
             Get in Touch
           </h2>
           <p className="text-lg text-slate-300">

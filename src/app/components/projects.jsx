@@ -25,7 +25,7 @@ export default function Projects() {
     >
       {/* Section Heading */}
       <header className="text-center mb-16">
-        <div className="flex items-center justify-center gap-4">
+        <div className="flex items-center justify-center gap-4 text-white">
           <div className="w-[2px] h-12 bg-violet-500"></div>
           <h2 className="text-4xl lg:text-5xl font-bold text-center">
             My Digital <span className="text-violet-500">Creations</span>

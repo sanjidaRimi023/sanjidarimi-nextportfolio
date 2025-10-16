@@ -11,7 +11,7 @@ const resumeData = {
   links: [
     { label: "LinkedIn", href: "https://www.linkedin.com/in/sanjida-akter-rimi-711909/", icon: Linkedin },
     { label: "GitHub", href: "https://github.com/sanjidaRimi023", icon: Github },
-    { label: "Portfolio", href: "https://your-portfolio-url.com", icon: Globe },
+    { label: "Portfolio", href: "https://sanjidarimi.vercel.app", icon: Globe },
   ],
   objective: "Passionate Front-End Developer skilled in React, Next.js, Tailwind CSS, and the MERN stack. Experienced in building responsive web applications with a focus on problem-solving, innovation, and continuous learning. Eager to contribute in a collaborative environment and grow into a versatile Software Developer, exploring AI and ML to create impactful solutions.",
   skills: [
@@ -25,8 +25,9 @@ const resumeData = {
     {
       title: "The DailyBulletin",
       date: "July 2025",
-      liveUrl: "#",
-      clientUrl: "#",
+      liveUrl: "https://daily-bulletin-96f27.web.app/",
+      clientUrl: "https://github.com/sanjidaRimi023/the-dailybulletin-client",
+      serverUrl: "https://github.com/sanjidaRimi023/the-dailybulletin-server",
       description: "A modern React-based news platform with responsive UI, role-based dashboards, article management, and subscription payments. Faced challenges with Firebase auth, Stripe integration, and API optimization, which helped me learn secure authentication, data visualization (Recharts), and state management (TanStack Query).",
       features: [
         "User-Friendly Interface: Designed with a sleek, responsive, and interactive interface, ensuring a smooth experience.",
@@ -38,8 +39,9 @@ const resumeData = {
     {
       title: "The Book Galaxy",
       date: "June 2025",
-      liveUrl: "#",
-      clientUrl: "#",
+      liveUrl: "https://book-galaxy-610c0.web.app/",
+      clientUrl: "https://github.com/sanjidaRimi023/book-galaxy-client",
+      serverUrl: "https://github.com/sanjidaRimi023/book-galaxy-server",
       description: "A responsive React-based book management app with authentication, protected routes, and interactive dashboards. Faced challenges with Firebase auth, JWT security, and state updates; learned secure routing, UI animations, and API integration.",
       features: [
         "Auth & Security: Firebase login/register, JWT-protected routes.",
@@ -51,8 +53,8 @@ const resumeData = {
     {
       title: "ClayCraft",
       date: "August 2025",
-      liveUrl: "#",
-      clientUrl: "#",
+      liveUrl: "https://claycrafts.vercel.app",
+      clientUrl: "https://github.com/sanjidaRimi023/clay-crafts",
       description: "A simple e-commerce platform with authentication and modern UI. Faced challenges with NextAuth integration and file upload handling, which helped me learn App Router auth flows, file management, and UI optimization.",
       features: [
         "Authentication: Secure login with NextAuth.js (App Router).",

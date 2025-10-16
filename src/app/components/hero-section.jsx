@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Download, Github, Linkedin, Facebook } from "lucide-react";
 
-// A simple, self-contained component for social media icons
+
 const SocialIcon = () => {
   const socialLinks = [
     {
@@ -13,12 +13,12 @@ const SocialIcon = () => {
       label: "GitHub",
     },
     {
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/sanjida-akter-rimi711909",
       icon: <Linkedin size={24} />,
       label: "LinkedIn",
     },
     {
-      href: "https://twitter.com",
+      href: "https://www.facebook.com/sanjida.rimi.123653",
       icon: <Facebook size={24} />,
       label: "Facebook",
     },
@@ -42,7 +42,7 @@ const SocialIcon = () => {
   );
 };
 
-// Custom hook to replicate the typewriter effect
+
 const useTypewriter = ({
   words,
   loop = true,
@@ -138,7 +138,7 @@ export default function HeroSection() {
           <Cursor cursorStyle="_" />
         </h2>
 
-        <p className="mt-3 max-w-xl text-lg sm:text-base italic">
+        <p className="mt-3 max-w-xl text-lg sm:text-base text-white italic">
           “ I'm a Frontend-focused MERN Stack Developer passionate about
           building fast, responsive, and scalable web applications. Skilled in
           React.js, Next.js, Express.js, MongoDB, and Firebase, I craft

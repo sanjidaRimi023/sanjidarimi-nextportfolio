@@ -24,7 +24,7 @@ export default function SkillsSection() {
 
   return (
     <section className="overflow-hidden">
-      <div className="container mx-auto pt-10 px-6 lg:px-24">
+      <div className="container mx-auto pt-10 px-6 lg:px-24 text-white">
         <div className="flex items-center justify-center gap-4">
           <div className="w-[3px] h-12 bg-violet-500"></div>
 
