@@ -4,23 +4,26 @@ import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Download, Github, Linkedin, Facebook } from "lucide-react";
 
-
 const SocialIcon = () => {
   const socialLinks = [
-    {
-      href: "https://github.com/sanjidaRimi023",
-      icon: <Github size={24} />,
-      label: "GitHub",
-    },
     {
       href: "https://www.linkedin.com/in/sanjida-akter-rimi711909",
       icon: <Linkedin size={24} />,
       label: "LinkedIn",
+      hoverColor: "hover:text-blue-500",
     },
+    {
+      href: "https://github.com/sanjidaRimi023",
+      icon: <Github size={24} />,
+      label: "GitHub",
+      hoverColor: "hover:text-indigo-600",
+    },
+
     {
       href: "https://www.facebook.com/sanjida.rimi.123653",
       icon: <Facebook size={24} />,
       label: "Facebook",
+      hoverColor: "hover:text-blue-700",
     },
   ];
 
@@ -33,7 +36,7 @@ const SocialIcon = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className="text-gray-400 hover:text-violet-400 transition-colors duration-300"
+          className={`text-gray-400 transition-colors duration-300 ${link.hoverColor} border-2 rounded-3xl p-2 hover:scale-105`}
         >
           {link.icon}
         </a>
@@ -41,7 +44,6 @@ const SocialIcon = () => {
     </div>
   );
 };
-
 
 const useTypewriter = ({
   words,
@@ -102,6 +104,7 @@ export default function HeroSection() {
     words: [
       "Frontend Developer",
       "Web Designer",
+      "Full Stack Developer",
       "MERN Stack Developer",
       "I build clean UI",
     ],
@@ -125,7 +128,7 @@ export default function HeroSection() {
           Welcome to my universe
         </div>
 
-        <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200">
+        <h1 className="text-xl sm:text-2xl md:text-3xl font-semibold text-white">
           Hi, I am
         </h1>
 
@@ -139,14 +142,15 @@ export default function HeroSection() {
         </h2>
 
         <p className="mt-3 max-w-xl text-lg sm:text-base text-white italic">
-          “ I'm a Frontend-focused MERN Stack Developer passionate about
-          building fast, responsive, and scalable web applications. Skilled in
-          React.js, Next.js, Express.js, MongoDB, and Firebase, I craft
-          intuitive UIs with Tailwind CSS, Shadcn UI, and Bootstrap while
-          developing secure, efficient backends. Curious about modern UI/UX and
-          performance optimization, I aim to contribute by delivering clean,
-          impactful solutions and collaborating effectively in a team
-          environment. ”
+          I’m a Frontend-focused MERN Stack Developer who turns ideas into
+          smooth and reliable web applications. I mainly work with React,
+          Next.js, Node.js, and MongoDB, building clean interfaces with Tailwind
+          CSS and shadcn/ui while keeping backend logic simple and solid with
+          Express. I break problems into small steps to solve them efficiently,
+          whether it’s a UI bug, API structure, or performance issue. I focus on
+          writing clear, maintainable code and improving features continuously.
+          My goal is to create fast, intuitive products while growing as a
+          developer who can contribute effectively in any team.
         </p>
         <div className="mt-6">
           <SocialIcon />
