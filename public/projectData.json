@@ -1,6 +1,41 @@
-[
+[ {
+  "_id": 1,
+  "projectName": "ApplyMate",
+  "projectImage": "https://i.ibb.co.com/d0fqbfWt/readmeimg.png",
+  "slogan": "ApplyMate is an AI-powered platform that helps job seekers organize and track all their job applications in one place.",
+  "features": [
+    "Smart Dashboard",
+     " Resume Builder",
+    "  AI Chrome Extension",
+    " AI Gmail Integration",
+    "Application Management",
+    " Advanced Search & Filter",
+    "Analytics & Insights",
+    "AI-Powered Analytics"
+   
+  ],
+  "technologies": [
+    "Next.js 15.5 (App Router)",
+    "React 19.1 (Vite)",
+    "NextAuth.js",
+    "Tailwind CSS",
+    "Google OAuth ",
+    "Nodemailer",
+    "Google Gemini 2.0 Flash",
+    "React Query",
+    "Framer Motion",
+    "Radix",
+    "MongoDB Atlas",
+    "Cloudinary",
+    "Vercel"
+  ],
+  "liveLink": "https://apply-mate-two.vercel.app/",
+  "clientLink": "https://github.com/sanjidaRimi023/apply_mate",
+  "serverLink": "https://github.com/sanjidaRimi023/apply_mate",
+  "description": "Its helps users organize, track, and manage their job and internship applications efficiently. Keep all your applications in one place, set reminders, and stay updated with deadlines to maximize your opportunities."
+},
   {
-    "_id": 1,
+    "_id": 2,
     "projectName": "Book Galaxy",
     "projectImage": "https://i.ibb.co.com/x8zbD9Z5/Screenshot-2025-09-13-231814.png",
     "slogan": "Book Galaxy built with React, Firebase, and MongoDB. This project main theme CRUD operation with book related product.",
@@ -34,7 +69,7 @@
     "description": "Book Galaxy is a modern, responsive, and feature-rich Book Management Platform built using React, Firebase Authentication, Tailwind CSS, Framer Motion, and MongoDB (via a backend API). It allows users to explore books by category, borrow and return them, manage their library, and much more."
   },
   {
-    "_id": 2,
+    "_id": 3,
     "projectName": "The Daily Bulletin",
     "projectImage": "https://i.ibb.co.com/7J0fR98r/the-dailybulletin.png",
     "slogan": "A modern, full-stack newspaper platform with role-based access, payments, and dynamic dashboards.",
@@ -72,7 +107,7 @@
     "description": "The Daily Bulletin The Daily Bulletin is a modern, full-stack newspaper platform built with the MERN stack (MongoDB, Express.js, React.js, Node.js). It offers a seamless and interactive experience for reading, writing, and managing news articles, featuring role-based access for regular users, premium subscribers, and administrators."
   },
   {
-    "_id": 3,
+    "_id": 4,
     "projectName": "WorkLynx",
     "projectImage": "https://i.ibb.co.com/Rp3xQ294/Screenshot-2025-09-13-232020.png",
     "slogan": "WorkLynx is a dynamic freelance task marketplace designed to bridge the gap between clients and freelancers.",
@@ -106,7 +141,7 @@
     "description": "WorkLynx is a modern and dynamic freelance task marketplace designed to seamlessly connect clients and freelancers. It allows users to post tasks, browse available projects, place bids, and manage their own freelance listings with ease. The platform features a smooth and intuitive user interface, ensuring an enjoyable experience across devices. Authentication is powered by Firebase, enabling secure email/password login, Google Sign-In, and role-based access control for different types of users. On the client side, React with Vite, React Router, Tailwind CSS, DaisyUI, and interactive libraries like Lottie, Swiper, and React Toastify provide a responsive and engaging interface. The backend API, built with Node.js, Express.js, and MongoDB, manages all task-related data and performs full CRUD operations efficiently. Additional features include real-time bid counters and secure communication with the database, making WorkLynx a reliable and feature-rich platform for modern freelance work."
   },
  {
-  "_id": 4,
+  "_id": 5,
   "projectName": "ClayCraft",
   "projectImage": "https://i.ibb.co.com/gLf650QH/Screenshot-2025-09-13-172915.png",
   "slogan": "ClayCraft is my very first Next.js e-commerce styled project with authentication and modern UI.",
