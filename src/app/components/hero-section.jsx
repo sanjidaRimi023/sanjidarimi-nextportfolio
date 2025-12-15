@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Download, Github, Linkedin, Facebook } from "lucide-react";
+import Link from "next/link";
 
 const SocialIcon = () => {
   const socialLinks = [
@@ -10,36 +11,33 @@ const SocialIcon = () => {
       href: "https://www.linkedin.com/in/sanjida-akter-rimi711909",
       icon: <Linkedin size={24} />,
       label: "LinkedIn",
-      hoverColor: "hover:text-blue-500",
     },
     {
       href: "https://github.com/sanjidaRimi023",
       icon: <Github size={24} />,
       label: "GitHub",
-      hoverColor: "hover:text-indigo-600",
     },
 
     {
       href: "https://www.facebook.com/sanjida.rimi.123653",
       icon: <Facebook size={24} />,
       label: "Facebook",
-      hoverColor: "hover:text-blue-700",
     },
   ];
 
   return (
     <div className="flex items-center gap-4">
       {socialLinks.map((link) => (
-        <a
+        <Link
           key={link.label}
           href={link.href}
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className={`text-gray-400 transition-colors duration-300 ${link.hoverColor} border-2 rounded-3xl p-2 hover:scale-105`}
+          className="transition-colors duration-300 text-indigo-500 shadow-2xl hover:shadow-purple-700 border-2 rounded-3xl p-2 hover:scale-105"
         >
           {link.icon}
-        </a>
+        </Link>
       ))}
     </div>
   );
@@ -124,7 +122,7 @@ export default function HeroSection() {
         viewport={{ once: false }}
         className="flex-1 flex flex-col items-center md:items-start text-center md:text-left"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 bg-violet-900/80 border border-violet-700 dark:border-violet-600 rounded-full text-xs sm:text-sm text-violet-200 dark:text-violet-300 backdrop-blur-sm hover:bg-violet-800 dark:hover:bg-white/20 transition-all duration-300">
+        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 bg-violet-900/80 border-violet-700 dark:border-violet-600 rounded-full text-sm animate-pulse backdrop-blur-sm hover:bg-violet-800 dark:hover:bg-white/20 transition-all duration-300">
           Welcome to my universe
         </div>
 
@@ -141,17 +139,34 @@ export default function HeroSection() {
           <Cursor cursorStyle="_" />
         </h2>
 
-        <p className="mt-3 max-w-xl text-lg sm:text-base text-white italic">
-          I’m a Frontend-focused MERN Stack Developer who turns ideas into
-          smooth and reliable web applications. I mainly work with React,
-          Next.js, Node.js, and MongoDB, building clean interfaces with Tailwind
-          CSS and shadcn/ui while keeping backend logic simple and solid with
-          Express. I break problems into small steps to solve them efficiently,
-          whether it’s a UI bug, API structure, or performance issue. I focus on
-          writing clear, maintainable code and improving features continuously.
-          My goal is to create fast, intuitive products while growing as a
-          developer who can contribute effectively in any team.
+        <p className="mt-3 text-lg sm:text-base text-white">
+          I’m a{" "}
+          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+            problem-driven developer
+          </span>{" "}
+          who turns{" "}
+          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+            unclear ideas
+          </span>{" "}
+          into structured solutions .I work by breaking tasks into clear steps,
+          staying focused on the{" "}
+          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+            user experience{" "}
+          </span>
+           and keeping things simple and reliable. In a team, I add value by
+          communicating clearly and taking{" "}
+          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+            ownership
+          </span>
+          , improving features step by step so the product gets better, not just
+          bigger.
+          <br />
+          <span className="block mt-2 text-purple-300 font-medium not-italic">
+            Learned by building, sharpened by real problems. Now I turn ideas
+            into products that actually work.
+          </span>
         </p>
+
         <div className="mt-6">
           <SocialIcon />
         </div>
