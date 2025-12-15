@@ -18,10 +18,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} w-full relative`}>
-        <div className="bg-black" />
-
         <Navbar />
-        <main className="py-10">{children}</main>
+        <main className="py-10 bg-black">{children}</main>
         <Footer />
       </body>
     </html>

@@ -44,7 +44,7 @@ const Marquee = ({ skills, direction = "forwards" }) => {
         {[...skills, ...skills].map((skill, index) => (
           <div
             key={index}
-            className="flex-shrink-0 flex flex-col items-center justify-center bg-gray-800/80 border border-gray-700/80 rounded-2xl text-white w-[120px] h-[120px] mx-2 transition-all duration-300 group hover:border-violet-500 hover:rotate-360"
+            className="shrink-0 flex flex-col items-center justify-center bg-white/10 border border-gray-700/80 rounded-xl w-[120px] h-[120px] m-2 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-800 hover:rotate-360"
           >
             <Icon
               icon={skill.icon}
