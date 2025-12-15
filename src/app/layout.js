@@ -18,21 +18,11 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} w-full relative`}>
-        <div
-  className="absolute inset-0 z-0 pointer-events-none bg-black"
-  style={{
-    backgroundImage: `
-      repeating-linear-gradient(0deg, transparent, transparent 5px, rgba(99, 102, 241, 0.15) 5px, rgba(99, 102, 241, 0.15) 6px, transparent 6px, transparent 15px),
-      repeating-linear-gradient(90deg, transparent, transparent 5px, rgba(99, 102, 241, 0.15) 5px, rgba(99, 102, 241, 0.15) 6px, transparent 6px, transparent 15px),
-      repeating-linear-gradient(0deg, transparent, transparent 10px, rgba(139, 92, 246, 0.12) 10px, rgba(139, 92, 246, 0.12) 11px, transparent 11px, transparent 30px),
-      repeating-linear-gradient(90deg, transparent, transparent 10px, rgba(139, 92, 246, 0.12) 10px, rgba(139, 92, 246, 0.12) 11px, transparent 11px, transparent 30px)
-    `,
-  }}
-/>
+        <div className="bg-black" />
 
         <Navbar />
-        <main className="relative pt-10">{children}</main>
-        <Footer/>
+        <main className="py-10">{children}</main>
+        <Footer />
       </body>
     </html>
   );
