@@ -4,6 +4,7 @@ import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import { motion } from "framer-motion";
 import { Mail, Phone, Send, Facebook, Linkedin, Github } from "lucide-react";
+import Link from "next/link";
 
 const FormField = ({
   name,
@@ -32,6 +33,20 @@ const FormField = ({
     </label>
   </div>
 );
+const socialLinks = [
+  {
+    href: "https://www.facebook.com/sanjida.rimi.123653",
+    Icon: Facebook,
+  },
+  {
+    href: "https://www.linkedin.com/in/sanjida-akter-rimi711909/",
+    Icon: Linkedin,
+  },
+  {
+    href: "https://github.com/sanjidaRimi023",
+    Icon: Github,
+  },
+];
 
 export default function Contact() {
   const [form, setForm] = useState({ name: "", email: "", message: "" });
@@ -95,7 +110,7 @@ export default function Contact() {
         }}
       />
 
-      <div className="container mx-auto grid lg:grid-cols-2 gap-12 items-start">
+      <div className="grid md:grid-cols-2 gap-4 px-2">
         <motion.div
           className="p-8 rounded-3xl space-y-6 bg-gray-900/50 border border-gray-700"
           initial={{ opacity: 0, x: -50 }}
@@ -117,30 +132,19 @@ export default function Contact() {
             </div>
             <div className="flex items-center space-x-3">
               <Phone className="w-6 h-6 text-violet-400" />
-              <span className="text-slate-200">+880 1571506877</span>
+              <span className="text-slate-200">+880 1774304043</span>
             </div>
             <div className="flex space-x-4 mt-6">
-              <a
-                href="https://www.facebook.com/sanjida.rimi.123653"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Facebook className="w-7 h-7 text-violet-400 hover:text-violet-300" />
-              </a>
-              <a
-                href="https://www.linkedin.com/in/sanjida-akter-rimi711909/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Linkedin className="w-7 h-7 text-violet-400 hover:text-violet-300" />
-              </a>
-              <a
-                href="https://github.com/sanjidaRimi023"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Github className="w-7 h-7 text-violet-400 hover:text-violet-300" />
-              </a>
+              {socialLinks.map(({ href, Icon }, index) => (
+                <Link
+                  key={index}
+                  href={href}
+                  target="_blank"
+                  className="bg-indigo-600 p-2 rounded-xl shadow-2xl shadow-purple-800 hover:scale-120 duration-200"
+                >
+                  <Icon className="w-7 h-7" />
+                </Link>
+              ))}
             </div>
           </div>
         </motion.div>
