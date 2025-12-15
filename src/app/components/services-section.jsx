@@ -41,7 +41,11 @@ const services = [
     title: "Frontend Development",
     description:
       "Developing interactive and high-performance UIs using modern frontend frameworks.",
-    points: ["React.js & Next.js", "Tailwind CSS & TypeScript", "API Integration"],
+    points: [
+      "React.js & Next.js",
+      "Tailwind CSS & TypeScript",
+      "API Integration",
+    ],
     themeColor: "green",
   },
   {
@@ -49,7 +53,11 @@ const services = [
     title: "UI/UX Implementation",
     description:
       "Translating modern Figma designs into pixel-perfect, responsive React components.",
-    points: ["Figma to React", "Component Libraries", "Animations & Transitions"],
+    points: [
+      "Figma to React",
+      "Component Libraries",
+      "Animations & Transitions",
+    ],
     themeColor: "orange",
   },
   {
@@ -57,19 +65,22 @@ const services = [
     title: "Backend Development",
     description:
       "Creating scalable backend solutions with Node.js, Express.js, and MongoDB.",
-    points: ["RESTful API Development", "MongoDB Schema Design", "JWT Authentication"],
+    points: [
+      "RESTful API Development",
+      "MongoDB Schema Design",
+      "JWT Authentication",
+    ],
     themeColor: "purple",
   },
-  // {
-  //   icon: <Cloud className="w-8 h-8 lg:w-12 lg:h-12" />,
-  //   title: "Cloud Deployment",
-  //   description:
-  //     "Seamless deployment and management of full-stack apps on modern cloud platforms.",
-  //   points: ["Vercel & Netlify", "CI/CD Workflows", "Production Optimization"],
-  //   themeColor: "red",
-  // },
+  {
+    icon: <Cloud className="w-8 h-8 lg:w-12 lg:h-12" />,
+    title: "Cloud Deployment",
+    description:
+      "Seamless deployment and management of full-stack apps on modern cloud platforms.",
+    points: ["Vercel & Netlify", "CI/CD Workflows", "Production Optimization"],
+    themeColor: "red",
+  },
 ];
-
 
 const themeStyles = {
   violet: {
@@ -185,10 +196,10 @@ export default function Services() {
                 onClick={() => setActiveIndex(index)}
                 className={`relative text-left w-full p-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 ${
                   activeIndex === index
-                    ? `bg-gray-900/50 shadow-lg ${
+                    ? `bg-gray-950/70 shadow-lg ${
                         themeStyles[service.themeColor].border
                       }`
-                    : "hover:bg-gray-800/60 border border-transparent"
+                    : "hover:bg-white/5 border border-transparent"
                 }`}
               >
                 {activeIndex === index && (
@@ -212,7 +223,7 @@ export default function Services() {
             ))}
           </motion.div>
 
-          <div className="lg:w-2/3 relative flex items-center justify-center">
+          <div className="relative flex items-center justify-center">
             <AnimatePresence mode="wait">
               <motion.div
                 key={activeIndex}
@@ -220,7 +231,7 @@ export default function Services() {
                 animate={{ opacity: 1, y: 0, scale: 1 }}
                 exit={{ opacity: 0, y: -30, scale: 0.95 }}
                 transition={{ duration: 0.5, ease: "easeInOut" }}
-                className={`w-full p-8 rounded-2xl border border-gray-700 shadow-xl backdrop-blur-md ${activeTheme.bg}`}
+                className={`w-full p-8 shadow-xl rounded-2xl backdrop-blur-md ${activeTheme.bg}`}
               >
                 <div
                   className={`mb-6 inline-block p-4 rounded-full shadow-md border border-white/10 ${activeTheme.gradientIcon}`}

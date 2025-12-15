@@ -7,7 +7,7 @@ const marqueeSkills1 = [
   { name: "TypeScript", icon: "logos:typescript-icon", color: "#3178C6" },
   { name: "Node.js", icon: "logos:nodejs-icon", color: "#339933" },
   { name: "Tailwind CSS", icon: "logos:tailwindcss-icon", color: "#06B6D4" },
-  { name: "Firebase", icon: "logos:firebase", color: "#FFCA28" },
+  { name: "Firebase", icon: "logos:firebase-icon", color: "#FFCA28" },
   { name: "MongoDB", icon: "logos:mongodb-icon", color: "#47A248" },
 ];
 
@@ -44,7 +44,7 @@ const Marquee = ({ skills, direction = "forwards" }) => {
         {[...skills, ...skills].map((skill, index) => (
           <div
             key={index}
-            className="shrink-0 flex flex-col items-center justify-center bg-white/10 border border-gray-700/80 rounded-xl w-[120px] h-[120px] m-2 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-800 hover:rotate-360"
+            className="shrink-0 flex flex-col items-center justify-center bg-gray-950/70 rounded-xl w-[120px] h-[120px] m-2 transition-all duration-300 group hover:shadow-2xl hover:shadow-purple-800 hover:rotate-360"
           >
             <Icon
               icon={skill.icon}

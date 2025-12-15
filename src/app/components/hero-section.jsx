@@ -113,7 +113,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-20 px-4 lg:px-20 mt-6">
+    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-20 px-4 lg:px-20">
       {/* Left side content */}
       <motion.div
         initial={{ x: -50, opacity: 0 }}
@@ -130,7 +130,7 @@ export default function HeroSection() {
           Hi, I am
         </h1>
 
-        <span className="text-3xl sm:text-4xl md:text-5xl font-bold mt-2 text-violet-500 ml-0 md:ml-10">
+        <span className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-violet-700">
           Sanjida Akter Rimi
         </span>
 
@@ -141,27 +141,27 @@ export default function HeroSection() {
 
         <p className="mt-3 text-lg sm:text-base text-white">
           I’m a{" "}
-          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+          <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             problem-driven developer
           </span>{" "}
           who turns{" "}
-          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+          <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             unclear ideas
           </span>{" "}
           into structured solutions .I work by breaking tasks into clear steps,
           staying focused on the{" "}
-          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+          <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             user experience{" "}
           </span>
            and keeping things simple and reliable. In a team, I add value by
           communicating clearly and taking{" "}
-          <span className="bg-indigo-400 font-semibold rounded-2xl px-2">
+          <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             ownership
           </span>
           , improving features step by step so the product gets better, not just
           bigger.
           <br />
-          <span className="block mt-2 text-purple-300 font-medium not-italic">
+          <span className="block mt-2 text-indigo-500 font-medium not-italic">
             Learned by building, sharpened by real problems. Now I turn ideas
             into products that actually work.
           </span>

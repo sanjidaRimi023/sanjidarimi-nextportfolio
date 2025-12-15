@@ -112,7 +112,7 @@ export default function Contact() {
 
       <div className="grid md:grid-cols-2 gap-4 px-2">
         <motion.div
-          className="p-8 rounded-3xl space-y-6 bg-gray-900/50 border border-gray-700"
+          className="p-8 rounded-3xl space-y-6 bg-gray-950/70"
           initial={{ opacity: 0, x: -50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}
@@ -150,7 +150,7 @@ export default function Contact() {
         </motion.div>
 
         <motion.div
-          className="p-8 rounded-3xl bg-gray-900/50 border border-gray-700"
+          className="p-8 rounded-3xl bg-gray-950/70"
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.6 }}

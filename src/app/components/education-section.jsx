@@ -46,7 +46,6 @@ export default function Education() {
       id="education"
       className="container mx-auto mb-20 px-4 sm:px-6 lg:px-20 text-white"
     >
-      
       <motion.header
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -86,15 +85,13 @@ export default function Education() {
             className="relative w-full pl-12"
             variants={itemVariants}
           >
-       
             <div className="absolute left-4 top-0 h-full w-0.5 bg-violet-500/30"></div>
 
- 
             <div className="absolute left-4 top-0 -translate-x-1/2 flex items-center justify-center w-8 h-8 bg-gradient-to-br from-violet-500 to-fuchsia-500 rounded-full ring-8 ring-gray-950 z-10">
               <GraduationCap className="text-white text-base" />
             </div>
 
-            <div className="h-full p-6 bg-slate-800/50 backdrop-blur-md rounded-xl shadow-lg border border-slate-700 transition-all duration-300 ease-in-out hover:shadow-violet-500/10 hover:border-violet-500/40 hover:scale-[1.02]">
+            <div className="h-full p-6 bg-gray-950/70 backdrop-blur-md rounded-xl shadow-lg  transition-all duration-300 ease-in-out hover:shadow-violet-500/10 hover:border-violet-500/40 hover:scale-[1.02]">
               <span className="text-sm font-semibold text-violet-300 bg-violet-500/20 py-1 px-3 rounded-full inline-block">
                 {edu.session}
               </span>

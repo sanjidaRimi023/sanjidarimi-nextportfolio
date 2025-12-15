@@ -1,5 +1,6 @@
 import Contact from "./components/contact-section";
 import Education from "./components/education-section";
+import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
 import Projects from "./components/projects";
 import Services from "./components/services-section";
@@ -30,6 +31,7 @@ export default function Home() {
       <div id="contactSection">
         <Contact/>
       </div>
+        <Footer />
     </>
   );
 }
