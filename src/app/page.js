@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
 import Navbar from "./components/navbar";
 import Projects from "./components/projects";
+import QuoteSection from "./components/QuoteSection";
 import Services from "./components/services-section";
 import SkillsSection from "./components/skill-section";
 
@@ -33,6 +34,9 @@ export default function Home() {
 
       <div id="servicesSection">
         <Services />
+      </div>
+      <div>
+        <QuoteSection/>
       </div>
       <div id="contactSection">
         <Contact/>

@@ -54,9 +54,14 @@ const AboutMe = () => {
           <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
             WHO AM I?
           </h2>
-          <p className="text-4xl font-extrabold mt-3">
-            The Architect Behind The Code
-          </p>
+          <div className="flex items-center justify-center gap-4">
+            <div className="w-[3px] h-12 bg-violet-500"></div>
+            <p className="text-5xl font-bold mt-3">
+              Code <span className="text-indigo-600">.</span> Create{" "}
+              <span className="text-indigo-600">.</span> Innovate.
+            </p>
+            <div className="w-[2px] h-12 bg-violet-500"></div>
+          </div>
         </header>
 
         <div>
@@ -92,7 +97,7 @@ const AboutMe = () => {
         <div>
           <h3 className="text-2xl sm:text-3xl font-bold my-10 flex items-center text-white ">
             <Sparkles className={`w-6 h-6 mr-3 ${primaryColor}`} />
-            How I Work: Step-by-Step
+            How I Work:
           </h3>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {steps.map((step, index) => (
