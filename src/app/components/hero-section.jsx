@@ -113,7 +113,7 @@ export default function HeroSection() {
   });
 
   return (
-    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 lg:gap-20 px-4 lg:px-20">
+    <section className="container mx-auto flex flex-col md:flex-row items-center md:items-start gap-8 px-4 py-10">
       {/* Left side content */}
       <motion.div
         initial={{ x: -50, opacity: 0 }}
@@ -136,7 +136,7 @@ export default function HeroSection() {
 
         <h2 className="mt-4 text-lg sm:text-xl md:text-2xl font-medium text-violet-600 dark:text-violet-400 flex justify-center md:justify-start items-center h-8">
           <span className="mr-2">{text}</span>
-          <Cursor cursorStyle="_" />
+          <Cursor cursorStyle="..." />
         </h2>
 
         <p className="mt-3 text-lg sm:text-base text-white">
@@ -153,7 +153,7 @@ export default function HeroSection() {
           <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             user experience{" "}
           </span>
-           and keeping things simple and reliable. In a team, I add value by
+          and keeping things simple and reliable. In a team, I add value by
           communicating clearly and taking{" "}
           <span className="bg-indigo-600 font-semibold rounded-2xl px-2">
             ownership
@@ -184,7 +184,7 @@ export default function HeroSection() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeInOut" }}
-        className="lg:col-span-2 flex justify-center items-center"
+        className="lg:col-span-2 justify-center items-center  hidden md:block"
       >
         <div className="relative w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96">
           <motion.div

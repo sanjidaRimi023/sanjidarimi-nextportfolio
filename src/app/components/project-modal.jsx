@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { ExternalLink, Globe, X } from "lucide-react";
+import Link from "next/link";
 
 export default function ProjectModal({ project, onClose }) {
   if (!project) return null;
@@ -10,7 +11,8 @@ export default function ProjectModal({ project, onClose }) {
   const transition = { type: "spring", stiffness: 200, damping: 25 };
 
   // Gradient for Technology Badges (more stylish)
-  const techGradient = "bg-gradient-to-br from-violet-600 to-fuchsia-500 hover:from-violet-700 hover:to-fuchsia-600";
+  const techGradient =
+    "bg-gradient-to-br from-violet-600 to-fuchsia-500 hover:from-violet-700 hover:to-fuchsia-600";
 
   return (
     <motion.div
@@ -41,7 +43,9 @@ export default function ProjectModal({ project, onClose }) {
           <h1 className="text-3xl sm:text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-pink-400">
             {project.projectName}
           </h1>
-          <p className="text-gray-400 mt-1 mb-4 text-lg font-light italic">{project.slogan}</p>
+          <p className="text-gray-400 mt-1 mb-4 text-lg font-light italic">
+            {project.slogan}
+          </p>
 
           <div className="overflow-hidden rounded-xl mb-6 border border-gray-700 shadow-xl">
             <img
@@ -52,28 +56,16 @@ export default function ProjectModal({ project, onClose }) {
           </div>
 
           <div className="mb-6">
-            <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-2">Overview</h2>
-            <p className="text-gray-300 leading-relaxed whitespace-pre-wrap">{project.description}</p>
+            <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-2">
+              Overview
+            </h2>
+            <p className="text-gray-300 leading-relaxed whitespace-pre-wrap">
+              {project.description}
+            </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
-            
-            {project.features && project.features.length > 0 && (
-              <div>
-                <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-2">Key Features</h2>
-                <ul className="list-none space-y-2 text-gray-200">
-                  {project.features?.map((f, i) => (
-               
-                    <li key={i} className="flex items-start">
-                      <span className="text-violet-400 mr-2 text-xl">•</span>
-                      <span className="pt-0.5">{f.trim()}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            )}
 
-            {/* Technologies */}
+          <div className="grid grid-cols-1 gap-4">
+             {/* Technologies */}
             {project.technologies && project.technologies.length > 0 && (
               <div>
                 <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-2">
@@ -91,10 +83,29 @@ export default function ProjectModal({ project, onClose }) {
                 </div>
               </div>
             )}
-          </div>
+            {project.features && project.features.length > 0 && (
+              <div>
+                <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-2">
+                  Key Features
+                </h2>
+                <ul className="list-none space-y-2 text-gray-200">
+                  {project.features?.map((f, i) => (
+                    <li key={i} className="flex items-start">
+                      <span className="text-violet-400 mr-2 text-xl">•</span>
+                      <span className="pt-0.5">{f.trim()}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
 
+           
+          </div>
+{/* projects links */}
           <div className="mt-8 pt-4 border-t border-white/10">
-            <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-3">Links</h2>
+            <h2 className="text-violet-400 uppercase font-bold text-sm tracking-widest mb-3">
+              Links
+            </h2>
             <div className="flex flex-wrap gap-3">
               {project.liveLink && (
                 <a
@@ -117,14 +128,14 @@ export default function ProjectModal({ project, onClose }) {
                 </a>
               )}
               {project.serverLink && (
-                <a
+                <Link
                   href={project.serverLink}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center gap-2 px-5 py-2 rounded-full font-semibold text-white border-2 border-purple-600 transition duration-200 shadow-lg shadow-pink-600/30"
                 >
                   <ExternalLink size={18} /> Server Code
-                </a>
+                </Link>
               )}
             </div>
           </div>

@@ -2,6 +2,7 @@ import Contact from "./components/contact-section";
 import Education from "./components/education-section";
 import Footer from "./components/footer";
 import HeroSection from "./components/hero-section";
+import Navbar from "./components/navbar";
 import Projects from "./components/projects";
 import Services from "./components/services-section";
 import SkillsSection from "./components/skill-section";
@@ -9,6 +10,7 @@ import SkillsSection from "./components/skill-section";
 export default function Home() {
   return (
     <>
+     <Navbar />
       <div id="heroSection">
         <HeroSection />
       </div>

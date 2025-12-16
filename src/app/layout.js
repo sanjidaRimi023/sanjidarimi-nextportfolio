@@ -18,9 +18,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${inter.className} w-full relative`}>
-        <Navbar />
-        <main className="bg-black pt-10">{children}</main>
-      
+        <main className="bg-black">{children}</main>
       </body>
     </html>
   );

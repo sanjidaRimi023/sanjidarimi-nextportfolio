@@ -4,16 +4,16 @@
   "projectImage": "https://i.ibb.co.com/d0fqbfWt/readmeimg.png",
   "slogan": "ApplyMate is an AI-powered platform that helps job seekers organize and track all their job applications in one place.",
   "features": [
-    "Smart Dashboard",
-     " Resume Builder",
-    "  AI Chrome Extension",
-    " AI Gmail Integration",
-    "Application Management",
-    " Advanced Search & Filter",
-    "Analytics & Insights",
-    "AI-Powered Analytics"
-   
-  ],
+  "Smart Dashboard - View all applications with real-time status and progress charts.",
+  "Resume Builder - Build professional resumes with templates and PDF export.",
+  "AI Chrome Extension - Scrape jobs from any site and save automatically.",
+  "AI Gmail Integration - Detect job emails and auto-update application status.",
+  "Application Management - Add, edit, delete applications and track details.",
+  "Advanced Search & Filter - Filter, search, and sort applications easily.",
+  "Analytics & Insights - Track application success rates and trends visually.",
+  "AI-Powered Analytics - Get insights, predictions, and application recommendations."
+]
+,
   "technologies": [
     "Next.js 15.5 (App Router)",
     "React 19.1 (Vite)",
@@ -138,7 +138,7 @@
     "liveLink": "https://work-lynx.firebaseapp.com",
     "clientLink": "https://github.com/sanjidaRimi023/workLynx-client",
     "serverLink": "https://github.com/sanjidaRimi023/worklynx-server",
-    "description": "WorkLynx is a modern and dynamic freelance task marketplace designed to seamlessly connect clients and freelancers. It allows users to post tasks, browse available projects, place bids, and manage their own freelance listings with ease. The platform features a smooth and intuitive user interface, ensuring an enjoyable experience across devices. Authentication is powered by Firebase, enabling secure email/password login, Google Sign-In, and role-based access control for different types of users. On the client side, React with Vite, React Router, Tailwind CSS, DaisyUI, and interactive libraries like Lottie, Swiper, and React Toastify provide a responsive and engaging interface. The backend API, built with Node.js, Express.js, and MongoDB, manages all task-related data and performs full CRUD operations efficiently. Additional features include real-time bid counters and secure communication with the database, making WorkLynx a reliable and feature-rich platform for modern freelance work."
+    "description": "WorkLynx is a modern freelance task marketplace that connects clients and freelancers. Users can post tasks, browse projects, place bids, and manage their freelance listings easily. The platform offers a smooth, responsive interface built with React, Vite, Tailwind CSS, DaisyUI, and interactive libraries like Lottie and Swiper. Firebase handles secure authentication, including email/password login, Google Sign-In, and role-based access control. The backend, powered by Node.js, Express.js, and MongoDB, manages all task data with full CRUD operations and real-time bid updates. WorkLynx provides a reliable, feature-rich experience for managing freelance work efficiently."
   },
  {
   "_id": 5,

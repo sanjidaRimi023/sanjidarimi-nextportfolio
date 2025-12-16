@@ -36,7 +36,7 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 w-full z-50 bg-black/50 backdrop-blur-md">
-      <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div className="container mx-auto px-4 py-3 flex items-center justify-between">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2">
           <Image src="/navbarlogo.png" width={150} height={40} alt="Logo" className="object-contain" />
