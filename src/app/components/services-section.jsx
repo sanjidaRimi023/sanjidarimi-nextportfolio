@@ -196,7 +196,7 @@ export default function Services() {
                 onClick={() => setActiveIndex(index)}
                 className={`relative text-left w-full p-4 rounded-xl transition-all duration-300 transform hover:-translate-y-1 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-offset-gray-950 ${
                   activeIndex === index
-                    ? `bg-gray-950/70 shadow-lg ${
+                    ? `bg-gray-950/60 shadow-lg ${
                         themeStyles[service.themeColor].border
                       }`
                     : "hover:bg-white/5 border border-transparent"

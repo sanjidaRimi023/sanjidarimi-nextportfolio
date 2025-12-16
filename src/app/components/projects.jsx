@@ -63,7 +63,7 @@ export default function Projects() {
               />
             </div>
 
-            <div className="relative z-10 bg-gray-950/70 backdrop-blur-lg border border-slate-700 rounded-xl shadow-lg transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-2xl group-hover:shadow-violet-800/20 pt-28 p-6 text-center">
+            <div className="relative z-10 bg-gray-950/60 backdrop-blur-lg border border-slate-700 rounded-xl shadow-lg transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-2xl group-hover:shadow-violet-800/20 pt-28 p-6 text-center">
               <h3
                 id={`project-title-${project._id}`}
                 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-violet-600 bg-clip-text text-transparent inline-block relative

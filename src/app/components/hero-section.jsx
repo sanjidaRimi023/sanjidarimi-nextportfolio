@@ -9,18 +9,18 @@ const SocialIcon = () => {
   const socialLinks = [
     {
       href: "https://www.linkedin.com/in/sanjida-akter-rimi711909",
-      icon: <Linkedin size={24} />,
+      icon: Linkedin,
       label: "LinkedIn",
     },
     {
       href: "https://github.com/sanjidaRimi023",
-      icon: <Github size={24} />,
+      icon: Github,
       label: "GitHub",
     },
 
     {
       href: "https://www.facebook.com/sanjida.rimi.123653",
-      icon: <Facebook size={24} />,
+      icon: Facebook,
       label: "Facebook",
     },
   ];
@@ -34,9 +34,9 @@ const SocialIcon = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label={link.label}
-          className="transition-colors duration-300 text-indigo-500 shadow-2xl hover:shadow-purple-700 border-2 rounded-3xl p-2 hover:scale-105"
+          className="p-3 rounded-full hover:bg-slate-800 border border-slate-700/50 text-slate-300 transition-all duration-300 bg-violet-800 hover:text-white hover:border-violet-600 shadow-lg hover:shadow-indigo-600"
         >
-          {link.icon}
+          <link.icon className="h-5 w-5" />
         </Link>
       ))}
     </div>

@@ -1,3 +1,4 @@
+import AboutMe from "./components/about-me";
 import Contact from "./components/contact-section";
 import Education from "./components/education-section";
 import Footer from "./components/footer";
@@ -13,6 +14,9 @@ export default function Home() {
      <Navbar />
       <div id="heroSection">
         <HeroSection />
+      </div>
+      <div id="heroSection">
+       <AboutMe/>
       </div>
 
       <div id="skillsSection">

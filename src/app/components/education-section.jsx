@@ -91,7 +91,7 @@ export default function Education() {
               <GraduationCap className="text-white text-base" />
             </div>
 
-            <div className="h-full p-6 bg-gray-950/70 backdrop-blur-md rounded-xl shadow-lg  transition-all duration-300 ease-in-out hover:shadow-violet-500/10 hover:border-violet-500/40 hover:scale-[1.02]">
+            <div className="h-full p-6 bg-gray-950/60 backdrop-blur-md rounded-xl shadow-lg  transition-all duration-300 ease-in-out hover:shadow-violet-500/10 hover:border-violet-500/40 hover:scale-[1.02]">
               <span className="text-sm font-semibold text-violet-300 bg-violet-500/20 py-1 px-3 rounded-full inline-block">
                 {edu.session}
               </span>
