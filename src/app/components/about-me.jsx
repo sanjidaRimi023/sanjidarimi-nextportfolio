@@ -54,16 +54,15 @@ const AboutMe = () => {
           <h2 className="text-sm font-semibold uppercase tracking-widest text-white">
             WHO AM I?
           </h2>
-          <div className="flex items-center justify-center gap-4">
+          <div className="flex items-center justify-center gap-4 text-white">
             <div className="w-[3px] h-12 bg-violet-500"></div>
             <p className="text-5xl font-bold mt-3">
               Code <span className="text-indigo-600">.</span> Create{" "}
-              <span className="text-indigo-600">.</span> Innovate.
+              <span className="text-indigo-600">.</span> Innovate
             </p>
             <div className="w-[2px] h-12 bg-violet-500"></div>
           </div>
         </header>
-
         <div>
           <div
             className={`p-8 rounded-2xl ${highlightBg} border border-indigo-700/50 ${shadowClass} flex flex-col md:flex-row gap-4`}

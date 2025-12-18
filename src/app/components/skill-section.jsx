@@ -29,16 +29,14 @@ export default function SkillsSection() {
           <div className="w-[3px] h-12 bg-violet-500"></div>
 
           <h2 className="text-4xl lg:text-5xl font-bold text-center">
-            My Best <span className="text-violet-500">Skills</span> &{" "}
-            <span className="text-violet-500">Technologies</span>
+            My Best Skills<span className="text-violet-500"> &</span>{" "}
+            Technologies <span className="text-violet-500"></span>
           </h2>
 
           <div className="w-[2px] h-12 bg-violet-500"></div>
         </div>
 
         <div className="flex flex-col items-center justify-center gap-12 lg:gap-8">
-         
-
           <OrbitingSkills />
 
           <MarqueeSkills />

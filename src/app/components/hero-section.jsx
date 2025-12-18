@@ -122,7 +122,7 @@ export default function HeroSection() {
         viewport={{ once: false }}
         className="flex-1 flex flex-col items-center md:items-start text-center md:text-left"
       >
-        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 bg-violet-900/80 border-violet-700 dark:border-violet-600 rounded-full text-sm animate-pulse backdrop-blur-sm hover:bg-violet-800 dark:hover:bg-white/20 transition-all duration-300">
+        <div className="inline-flex items-center gap-2 px-3 py-1 mb-6 bg-violet-900/80 border-violet-700 dark:border-violet-600 rounded-full text-sm animate-pulse backdrop-blur-sm hover:bg-violet-800 dark:hover:bg-white/20 transition-all duration-300 text-white">
           Welcome to my universe
         </div>
 

@@ -27,7 +27,7 @@ export default function Projects() {
         <div className="flex items-center justify-center gap-4 text-white">
           <div className="w-[2px] h-12 bg-violet-500"></div>
           <h2 className="text-4xl lg:text-5xl font-bold text-center">
-            My Digital <span className="text-violet-500">Creations</span>
+            Things I<span className="text-violet-500">’</span>ve Built
           </h2>
           <div className="w-[2px] h-12 bg-violet-500"></div>
         </div>
@@ -63,7 +63,7 @@ export default function Projects() {
               />
             </div>
 
-            <div className="relative z-10 bg-gray-950/60 backdrop-blur-lg border border-slate-700 rounded-xl shadow-lg transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-2xl group-hover:shadow-violet-800/20 pt-28 p-6 text-center">
+            <div className="relative z-10 bg-gray-950/60 backdrop-blur-lg rounded-xl shadow-lg transition-all duration-300 group-hover:border-violet-500 group-hover:shadow-2xl group-hover:shadow-violet-800/20 pt-28 p-6 text-center">
               <h3
                 id={`project-title-${project._id}`}
                 className="text-2xl font-bold tracking-tight bg-gradient-to-r from-purple-400 to-violet-600 bg-clip-text text-transparent inline-block relative
