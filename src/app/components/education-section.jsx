@@ -60,7 +60,7 @@ export default function Education() {
             id="education-title"
             className="text-4xl lg:text-5xl font-bold text-center"
           >
-            Educational <span className="text-violet-500"> Journey</span>
+            Educational Journey
           </h2>
 
           <div className="w-[2px] h-12 bg-violet-500"></div>

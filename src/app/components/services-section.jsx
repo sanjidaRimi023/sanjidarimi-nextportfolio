@@ -172,7 +172,7 @@ export default function Services() {
               id="services-title"
               className="text-4xl lg:text-5xl font-bold text-center"
             >
-              My Expert <span className="text-violet-500"> Services</span>
+              My Expert Services
             </h2>
             <div className="w-[2px] h-12 bg-violet-500"></div>
           </div>
